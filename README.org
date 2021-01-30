@@ -1,0 +1,19 @@
+* Prologic
+  A propostional logic statement evaluator and truth table generator
+
+** Usage:  
+
+** Development  
+*** File Structure:
+    - propy/
+      - =tokens.py= 
+        - =Var=, =SYMBOLS=
+      - =lexer.py=
+        - =lex(src)=
+      - =my_parser.py=
+        =parser= is a built-in module, so we name this file =my_parser=
+        - =parse(tokens)=
+      - =evaluator.py=
+        - =evaluate(expr)=
+      - =truth_table.py=
+        - =truth_table(expr)=
