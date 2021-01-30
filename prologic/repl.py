@@ -6,8 +6,10 @@ from prologic.truth_table import truth_table
 
 STARTUP_MSG = '''
 =========================
-=progic=
-A Propositional Logic Statement Evaluator.
+* Prologic :
+
+- A Propositional Logic Statement Evaluator.
+- Options:
 (d) enable debug mode
 (e) for examples
 (h) to display this msg
