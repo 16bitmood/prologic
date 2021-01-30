@@ -1,16 +1,13 @@
 * Prologic
   A propostional logic statement evaluator and truth table generator
 *** Installation:
-    #+begin_src 
-    p
-    #+end_src
-*** Usage:  
-    #+begin_src bash
-    
+    1. =cd= to project root
+    2. =pip install .=
+*** Usage:
+    #+begin_src sh
 [~] >> prologic
-
 =========================
-* Prologic :
+*Prologic :
 
 - A Propositional Logic Statement Evaluator.
 - Options:
@@ -19,14 +16,12 @@
 (h) to display this msg
 (i) to evaluate at a given input
 (q) to quit
-
-
 >> 
-    #+end_src
+#+end_src
 *** Features:
     * Generate Truth Table of a given logic statement 
-    * Supports unicode input =p⇒q=
- 
+    * Supports unicode input, =p⇒q=
+    * Evaluate logic statements at given input
 *** Examples:
     #+begin_src bash
 >> !p
@@ -60,10 +55,6 @@
          0|         0|         1|         0|         0
          0|         0|         0|         0|         0
 ------------------------------------------------------
-    #+end_src
-*** Installation:
-    #+begin_src bash
-    pip
     #+end_src
 *** Development
 **** File Structure:
