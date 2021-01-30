@@ -1,4 +1,5 @@
-from tokens import Var
+from prologic.tokens import Var
+
 op = {
     'implication': lambda x, y: y if x else True,  # a -> b
     'equivalence': lambda x, y: x == y,  # a = b

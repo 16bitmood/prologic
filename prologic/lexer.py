@@ -1,4 +1,4 @@
-from tokens import Var, SYMBOLS
+from prologic.tokens import Var, SYMBOLS
 
 
 # Helper Functions

@@ -1,4 +1,4 @@
-from lexer import Var
+from prologic.lexer import Var
 
 
 class Parser:

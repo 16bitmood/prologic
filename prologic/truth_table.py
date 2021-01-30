@@ -1,10 +1,10 @@
 import itertools
 from copy import deepcopy as cp
 
-from tokens import Var, ABSOLUTES
-from lexer import lex
-from my_parser import parse
-from evaluator import evaluate
+from prologic.tokens import Var, ABSOLUTES
+from prologic.lexer import lex
+from prologic.my_parser import parse
+from prologic.evaluator import evaluate
 
 # Global Constants
 op_to_str = {
@@ -115,9 +115,17 @@ def pprint_truth_table(header, rows):
 
 
 # Main Function
-def truth_table(src):
+def truth_table(src, should_print=True, dbg=False):
     tokens = lex(src)
     expr = parse(tokens)
     header, rows = gen_truth_table(expr)
-    pprint_truth_table(header, rows)
+    if dbg:
+        print('tokens: ', tokens)
+        print('expr: ', expr)
+        print('header: ', header)
+        print('rows: ', rows)
+
+    if should_print:
+        pprint_truth_table(header, rows)
+
     return header, rows

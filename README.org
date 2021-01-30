@@ -1,7 +1,7 @@
 * Prologic
   A propostional logic statement evaluator and truth table generator
 
-** Usage:  
+** Usage:
 
 ** Development  
 *** File Structure:
